@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega Educational Associates | Mission Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: linear-gradient(rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.9)), 
+                        url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2022&auto=format&fit=crop') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #f8fafc; 
+            scroll-behavior: smooth;
+        }
+        .glow { text-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .stage-box { border-left: 4px solid #3b82f6; padding-left: 1.5rem; margin-bottom: 2rem; }
+        .resource-link { color: #60a5fa; text-decoration: none; transition: all 0.2s; font-weight: 600; }
+        .resource-link:hover { color: #93c5fd; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 glass py-4 px-8 flex justify-between items-center border-b border-white/5">
+        <div class="flex flex-col">
+            <div class="text-xl md:text-2xl font-black tracking-tighter glow uppercase leading-none text-white">VEGA<span class="text-blue-500">.</span></div>
+            <div class="text-[8px] uppercase tracking-[0.4em] font-bold text-blue-400 leading-none mt-1">Educational Associates</div>
+        </div>
+        <div class="hidden md:flex space-x-6 text-[9px] uppercase tracking-[0.2em] font-bold">
+            <a href="#manifest" class="hover:text-blue-400 transition">Manifest</a>
+            <a href="#first-light" class="hover:text-blue-400 transition">First Light</a>
+            <a href="#criticals" class="hover:text-blue-400 transition">Criticals</a>
+            <a href="#discovery" class="hover:text-blue-400 transition">Discovery</a>
+        </div>
+        <a href="mailto:breslow.michael@gmail.com" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full text-[9px] font-bold tracking-widest uppercase transition">Mission Briefing</a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="h-screen flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 leading-tight uppercase">
+            Accelerating <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">Excellence</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-2xl mb-10 font-light tracking-widest uppercase opacity-80">
+            One Prompt At A Time.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#manifest" class="bg-white text-black px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-blue-400 transition shadow-xl">View Manifest</a>
+            <a href="#first-light" class="glass px-8 py-4 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-white/10 transition">Enter Control</a>
+        </div>
+    </header>
+
+    <!-- MISSION MANIFEST -->
+    <section id="manifest" class="py-24 px-8 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold text-blue-500 uppercase tracking-[0.5em] mb-4">Mission Manifest</h2>
+            <p class="text-4xl font-black uppercase">The AI Ascension Strategy</p>
+        </div>
+
+        <div class="space-y-8">
+            <div class="stage-box">
+                <h4 class="text-blue-400 font-bold uppercase text-xs mb-1">Stage 01: Pre-Flight Briefing</h4>
+                <p class="text-slate-300">Aligning objectives. We discuss the current state of PD and the 'Vega Vision' for reclaiming your time.</p>
+            </div>
+            <div class="stage-box">
+                <h4 class="text-blue-400 font-bold uppercase text-xs mb-1">Stage 02: Systems Check</h4>
+                <p class="text-slate-300">Sync with Mission Control. Reset sensors and explore the Resource Hub independently.</p>
+            </div>
+            <div class="stage-box">
+                <h4 class="text-blue-400 font-bold uppercase text-xs mb-1">Stage 03: Navigation & Flight Path</h4>
+                <p class="text-slate-300">The Flight Manual for AI in Education. Live deployments solving real-world classroom friction.</p>
+            </div>
+            <div class="stage-box border-blue-500 bg-blue-500/5 p-6 rounded-r-xl">
+                <h4 class="text-blue-400 font-bold uppercase text-xs mb-1">Stage 04: Extravehicular Activity (EVA)</h4>
+                <p class="text-slate-300 mb-4 font-light">Autonomous work time. Choose your mission parameters:</p>
+                <ul class="text-sm space-y-3 text-slate-400">
+                    <li><strong>Voyager Protocol:</strong> Signal your 'First-Year Self' through the wormhole.</li>
+                    <li><strong>Mission Alpha:</strong> Autonomous exploration of the Deep Space Menu.</li>
+                    <li><strong>Mission Beta:</strong> 1-on-1 AI Architecture for your specific 'pain points.'</li>
+                </ul>
+            </div>
+            <div class="stage-box">
+                <h4 class="text-blue-400 font-bold uppercase text-xs mb-1">Stage 05: Re-Entry & Debrief</h4>
+                <p class="text-slate-300">Confirmation of mission success. Sharing Intel from the field and deployment readiness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: FIRST LIGHT -->
+    <section id="first-light" class="py-24 px-8 bg-black/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold text-blue-500 uppercase tracking-[0.5em] mb-4">Section 01</h2>
+                <p class="text-4xl font-black uppercase">First Light Resources</p>
+                <p class="text-slate-400 mt-4 italic">"Illuminating your workflow immediately."</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-sm tracking-widest text-center">AI Assisted Lessons</h3>
+                    <ul class="text-xs space-y-4">
+                        <li><a href="#" class="resource-link">Bright Idea Laser Show Lesson</a></li>
+                        <li><a href="#" class="resource-link">Winter Constellations (5th Grade)</a></li>
+                        <li><a href="#" class="resource-link">Cosmic Colors Weekly Plan</a></li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-2xl card-hover border-blue-500/20">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-sm tracking-widest text-center">Data Analysis Tools</h3>
+                    <ul class="text-xs space-y-4">
+                        <li><a href="#" class="resource-link">District Benchmark (5-Second Analysis)</a></li>
+                        <li><a href="#" class="resource-link">Quiz Result Recommendations</a></li>
+                        <li><a href="#" class="resource-link">Google AI Studio Large Doc Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="glass p-8 rounded-2xl card-hover">
+                    <h3 class="text-blue-400 font-bold mb-4 uppercase text-sm tracking-widest text-center">Time Savers</h3>
+                    <ul class="text-xs space-y-4 text-slate-400">
+                        <li>• Attendance Training for AI</li>
+                        <li>• Lab Material Planning Assistant</li>
+                        <li>• Animal Shelter Inquiry Bot</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: MISSION CRITICALS -->
+    <section id="criticals" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold text-blue-500 uppercase tracking-[0.5em] mb-4">Section 02</h2>
+            <p class="text-4xl font-black uppercase">Mission Criticals</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-6 rounded-xl border-white/5">
+                <h4 class="font-bold text-white mb-2 uppercase text-xs">The Satisfactory Teacher's Guide</h4>
+                <p class="text-[10px] text-slate-400 mb-4 leading-relaxed font-light italic">"Letters of advice from my older teacher self to my first-year teacher self."</p>
+                <a href="https://mbreslow12.edublogs.org/2013/05/" class="text-blue-500 text-[10px] font-bold tracking-widest hover:underline">ACCESS ARCHIVE</a>
+            </div>
+            <div class="glass p-6 rounded-xl border-white/5">
+                <h4 class="font-bold text-white mb-2 uppercase text-xs text-center">Climate & Culture</h4>
+                <ul class="text-[10px] space-y-2 text-center">
+                    <li><a href="#" class="resource-link">Renaissance Yearly Ideas</a></li>
+                    <li><a href="#" class="resource-link">Academic Pep Rally Script</a></li>
+                    <li><a href="#" class="resource-link">Back to School Bingo</a></li>
+                </ul>
+            </div>
+            <div class="glass p-6 rounded-xl border-white/5">
+                <h4 class="font-bold text-white mb-2 uppercase text-xs text-center">Digital Notebooks</h4>
+                <ul class="text-[10px] space-y-2 text-center">
+                    <li><a href="#" class="resource-link">The Playbook Template</a></li>
+                    <li><a href="#" class="resource-link">First Day Homeroom Guide</a></li>
+                    <li><a href="#" class="resource-link">Achievement Coach Presentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DEEP SPACE DISCOVERY -->
+    <section id="discovery" class="py-24 px-8 bg-black/40">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-xs font-bold text-blue-500 uppercase tracking-[0.5em] mb-4">Section 04</h2>
+            <p class="text-4xl font-black uppercase mb-12">Deep Space Discovery Lab</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="space-y-6">
+                    <h5 class="text-blue-400 font-bold uppercase text-[10px] tracking-[0.3em]">Immersive Science</h5>
+                    <div class="glass p-4 rounded-lg text-[10px] text-left">
+                        <p class="font-bold mb-2">Dissection Modules:</p>
+                        <a href="#" class="block resource-link mb-1 uppercase">Shark Scavenger Hunt</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">Rat Dissection Guide</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">Virtual Frog Lab</a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h5 class="text-blue-400 font-bold uppercase text-[10px] tracking-[0.3em]">Engineering Labs</h5>
+                    <div class="glass p-4 rounded-lg text-[10px] text-left">
+                        <p class="font-bold mb-2">Physics & Motion:</p>
+                        <a href="#" class="block resource-link mb-1 uppercase">Mars Lander Budget Lab</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">Destruction Derby Instructions</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">Silly Simple Machines</a>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h5 class="text-blue-400 font-bold uppercase text-[10px] tracking-[0.3em]">K-5 Exploration</h5>
+                    <div class="glass p-4 rounded-lg text-[10px] text-left">
+                        <p class="font-bold mb-2">Subject Paths:</p>
+                        <a href="#" class="block resource-link mb-1 uppercase">Oreo Moon Phases</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">Chromatography Butterflies</a>
+                        <a href="#" class="block resource-link mb-1 uppercase">States of Matter Superhero</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-24 px-8 border-t border-white/5 text-center bg-black/80">
+        <div class="flex flex-col items-center mb-12">
+            <div class="text-2xl font-black tracking-tighter glow uppercase text-white">VEGA<span class="text-blue-500">.</span></div>
+            <div class="text-[8px] uppercase tracking-[0.5em] font-bold text-blue-400 mt-2">Educational Associates</div>
+        </div>
+        <p class="text-slate-500 text-[8px] uppercase tracking-[0.4em] max-w-4xl mx-auto leading-loose opacity-60 mb-10">
+            SYNTHETIC INTELLIGENCE DISCLOSURE: This curriculum was architected through a Human-in-the-Loop (HITL) framework, leveraging Large Language Models to accelerate instructional synthesis. All intellectual assets are protected under the 2025 Vega Mission Protocol.
+        </p>
+        <p class="text-slate-600 text-[10px] font-bold tracking-[0.2em] uppercase">
+            © 2025 Michael A. Breslow | Vega Educational Associates
+        </p>
+    </footer>
+
+</body>
+</html>
