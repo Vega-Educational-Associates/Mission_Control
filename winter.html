@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Briefing: Winter Constellations | Vega</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: linear-gradient(rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.95)), 
+                        url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2022&auto=format&fit=crop') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #f8fafc; 
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-border { border-left: 4px solid #3b82f6; }
+        .nav-active { border-bottom: 2px solid #3b82f6; color: #60a5fa; }
+        .rubric-table th { background: rgba(59, 130, 246, 0.1); color: #60a5fa; padding: 12px; text-transform: uppercase; font-size: 10px; letter-spacing: 0.1em; }
+        .rubric-table td { padding: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-size: 11px; color: #cbd5e1; }
+    </style>
+</head>
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <nav class="fixed w-full z-50 glass py-4 px-8 flex justify-between items-center border-b border-white/5">
+        <div class="flex flex-col">
+            <a href="index.html" class="text-xl font-black tracking-tighter uppercase leading-none text-white hover:text-blue-400 transition">VEGA<span class="text-blue-500">.</span></a>
+            <div class="text-[7px] uppercase tracking-[0.4em] font-bold text-blue-400 leading-none mt-1">Command Center</div>
+        </div>
+        <div class="hidden md:flex space-x-6 text-[9px] uppercase tracking-[0.2em] font-bold">
+            <a href="#overview" class="hover:text-blue-400 transition">Overview</a>
+            <a href="#pre-visit" class="hover:text-blue-400 transition">Pre-Visit</a>
+            <a href="#visit" class="hover:text-blue-400 transition">Visit</a>
+            <a href="#post-visit" class="hover:text-blue-400 transition">Post-Visit</a>
+            <a href="#rubric" class="hover:text-blue-400 transition">Rubric</a>
+        </div>
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full text-[9px] font-bold tracking-widest uppercase transition text-white">Print Mission</button>
+    </nav>
+
+    <!-- HERO HEADER -->
+    <header id="overview" class="pt-32 pb-20 px-8 max-w-5xl mx-auto text-center">
+        <h4 class="text-blue-400 text-xs font-bold tracking-[0.5em] uppercase mb-4 animate-pulse text-white">Mission Briefing: Grade 5</h4>
+        <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-8 uppercase text-white">Winter Constellations <br>& <span class="text-blue-500">Star Life Cycles</span></h1>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+            <div class="glass p-4 rounded-xl">
+                <p class="text-[10px] uppercase tracking-widest text-blue-400 font-bold mb-1">Timeframe</p>
+                <p class="text-sm font-bold text-white">3-Phase Mission</p>
+            </div>
+            <div class="glass p-4 rounded-xl">
+                <p class="text-[10px] uppercase tracking-widest text-blue-400 font-bold mb-1">Standard</p>
+                <p class="text-sm font-bold text-white">NGSS 5-ESS1-1</p>
+            </div>
+            <div class="glass p-4 rounded-xl">
+                <p class="text-[10px] uppercase tracking-widest text-blue-400 font-bold mb-1">Siri/AI Ready</p>
+                <p class="text-sm font-bold text-white">Yes</p>
+            </div>
+            <div class="glass p-4 rounded-xl">
+                <p class="text-[10px] uppercase tracking-widest text-blue-400 font-bold mb-1">Immersive</p>
+                <p class="text-sm font-bold text-white">Planetarium</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- STANDARDS & OBJECTIVES -->
+    <section class="py-16 px-8 max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+        <div class="glass p-8 rounded-3xl glow-border">
+            <h3 class="text-blue-500 font-bold text-xs uppercase tracking-widest mb-6 italic">🎯 Standards Alignment</h3>
+            <p class="text-sm font-bold mb-4 text-white">NGSS 5-ESS1-1</p>
+            <p class="text-xs text-slate-400 leading-relaxed italic">"Support an argument that differences in the apparent brightness of the Sun compared to other stars is due to their relative distances from Earth."</p>
+        </div>
+        <div class="glass p-8 rounded-3xl glow-border">
+            <h3 class="text-blue-500 font-bold text-xs uppercase tracking-widest mb-6 italic">🧠 Learning Objectives</h3>
+            <ul class="text-xs space-y-3 text-slate-300">
+                <li>• Identify major winter constellations (Orion, Taurus, Pleiades).</li>
+                <li>• Correlate star color with temperature and age.</li>
+                <li>• Model the life cycles of medium vs. massive stars.</li>
+                <li>• Solve the Apparent Brightness vs. Distance paradox.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- MISSION PHASES -->
+    <section class="py-20 px-8 max-w-5xl mx-auto">
+        
+        <!-- PHASE 1: PRE-VISIT -->
+        <div id="pre-visit" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="text-4xl font-black text-blue-500/20 uppercase">01</span>
+                <h2 class="text-2xl font-black uppercase text-white">Pre-Visit: Initial Ignition (45m)</h2>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] space-y-6">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h4 class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-4">The Engage Phase</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed mb-6">Utilize <strong class="text-white">Stellarium.org</strong> to observe the winter sky. Launch an inquiry: "Why are some stars brighter? Are all stars the same?"</p>
+                        <a href="http://www.stellarium.org/" target="_blank" class="bg-blue-600/20 border border-blue-500/50 px-4 py-2 rounded-lg text-[9px] font-bold tracking-widest uppercase hover:bg-blue-500 transition">Launch Stellarium Portal</a>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5">
+                        <h4 class="text-white text-[10px] font-bold uppercase tracking-widest mb-4 italic">Vocabulary Deck</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-900/40 px-3 py-1 rounded-full text-[9px] border border-blue-500/30 uppercase">Blue Giant</span>
+                            <span class="bg-blue-900/40 px-3 py-1 rounded-full text-[9px] border border-blue-500/30 uppercase">Supernova</span>
+                            <span class="bg-blue-900/40 px-3 py-1 rounded-full text-[9px] border border-blue-500/30 uppercase">White Dwarf</span>
+                            <span class="bg-blue-900/40 px-3 py-1 rounded-full text-[9px] border border-blue-500/30 uppercase">Apparent Brightness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 2: PLANETARIUM VISIT -->
+        <div id="visit" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="text-4xl font-black text-blue-500/20 uppercase">02</span>
+                <h2 class="text-2xl font-black uppercase text-white">Planetarium Visit: Deep Space Ops (60m)</h2>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] bg-blue-500/5 border-blue-500/20">
+                <h4 class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-6">Observational Protocols</h4>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="space-y-4">
+                        <p class="text-xs font-bold text-white uppercase border-b border-white/10 pb-2">Pattern Recognition</p>
+                        <p class="text-xs text-slate-400">Sketch shapes for Orion and Taurus. Identify the brightest core stars.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-xs font-bold text-white uppercase border-b border-white/10 pb-2">Thermal Analysis</p>
+                        <p class="text-xs text-slate-400">Categorize stars by color (Temperature indicators). Identify Red Supergiants vs Blue Giants.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-xs font-bold text-white uppercase border-b border-white/10 pb-2">Life Cycle Intel</p>
+                        <p class="text-xs text-slate-400">Record data on star lifespan. Listen for the 'Death of a Star' auditory cues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PHASE 3: POST-VISIT -->
+        <div id="post-visit" class="mb-20">
+            <div class="flex items-center space-x-4 mb-8">
+                <span class="text-4xl font-black text-blue-500/20 uppercase">03</span>
+                <h2 class="text-2xl font-black uppercase text-white">Post-Visit: Synthesis & Debrief (60m)</h2>
+            </div>
+            <div class="glass p-10 rounded-[2.5rem] space-y-10">
+                <div>
+                    <h4 class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-4 italic text-white">Life Cycle Modeling</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-6 italic">Construct two distinct flow diagrams using color-coded representation for Small/Medium vs. Massive star trajectories.</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-black/40 p-4 rounded-xl border border-white/5 text-[10px] uppercase tracking-widest leading-loose">
+                            Nebula → Yellow Star → Red Giant → <span class="text-blue-400">White Dwarf</span>
+                        </div>
+                        <div class="bg-black/40 p-4 rounded-xl border border-white/5 text-[10px] uppercase tracking-widest leading-loose">
+                            Nebula → Blue Giant → Supernova → <span class="text-blue-400">Black Hole</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RUBRIC -->
+        <div id="rubric" class="py-20">
+            <h2 class="text-2xl font-black uppercase mb-10 text-white">Mission Evaluation Rubric</h2>
+            <div class="glass rounded-3xl overflow-hidden">
+                <table class="w-full rubric-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>4 - Exceeds</th>
+                            <th>3 - Meets</th>
+                            <th>1-2 - Beginning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-bold">Observations</td>
+                            <td>Accurate sketches; detailed color/brightness notes.</td>
+                            <td>Clear sketches and basic notes.</td>
+                            <td>Partial or incomplete data.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Life Cycle</td>
+                            <td>Complete accuracy with labels and color logic.</td>
+                            <td>Mostly complete; minor sequence errors.</td>
+                            <td>Missing steps or incorrect sequence.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold">Brightness</td>
+                            <td>Clearly explains Size AND Distance variables.</td>
+                            <td>Explains one correct factor (Size or Distance).</td>
+                            <td>Partial explanation with errors.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 px-8 border-t border-white/5 text-center bg-black/40">
+        <div class="mb-8 text-xl font-black tracking-tighter glow uppercase text-white">VEGA<span class="text-blue-500">.</span></div>
+        <p class="text-slate-500 text-[8px] uppercase tracking-[0.4em] max-w-4xl mx-auto leading-loose opacity-60 mb-8">
+            SYNTHETIC INTELLIGENCE DISCLOSURE: This curriculum was architected through a Human-in-the-Loop (HITL) framework, leveraging Large Language Models to accelerate instructional synthesis. All intellectual assets are protected under the 2025 Vega Mission Protocol.
+        </p>
+        <p class="text-slate-600 text-[10px] font-bold tracking-[0.2em] uppercase">
+            © 2025 Michael A. Breslow | Vega Educational Associates
+        </p>
+    </footer>
+
+</body>
+</html>
